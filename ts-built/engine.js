@@ -22,7 +22,7 @@ var TSE;
         };
         Engine.prototype.loadShader = function () {
             var vertexShaderSource = "\nattribute vec3 a_position;\n\nvoid main() {\n    gl_Position = vec4(a_position, 1.0);\n}";
-            var fragmentShaderSource = "\nprecision midiump float;\n\nvoid main() {\n    gl_FragColor = vec4(1.0);\n}";
+            var fragmentShaderSource = "\nprecision mediump float;\n\nvoid main() {\n    gl_FragColor = vec4(1.0);\n}";
             this._shader = new TSE.Shader("basic", vertexShaderSource, fragmentShaderSource);
         };
         return Engine;
